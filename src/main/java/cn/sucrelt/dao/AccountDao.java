@@ -1,6 +1,8 @@
 package cn.sucrelt.dao;
 
 import cn.sucrelt.domain.Account;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -16,6 +18,7 @@ public interface AccountDao {
      *
      * @return
      */
+    @Select("select * from account")
     public List<Account> findAll();
 
     /**
@@ -23,6 +26,7 @@ public interface AccountDao {
      *
      * @param account
      */
+    @Insert("insert into account (name, money) values (#{name}, #{money})")
     public void saveAccount(Account account);
 
 }
