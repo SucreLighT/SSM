@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE configuration
-        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-config.dtd">
-<configuration>
-    <!-- 配置环境 -->
-    <environments default="mysql">
-        <environment id="mysql">
-            <transactionManager type="JDBC"/>
-            <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/ssm?characterEncoding=UTF-8&amp;serverTimezone=GMT"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123456"/>
-            </dataSource>
-        </environment>
-    </environments>
-    <!-- 引入映射的配置文件，使用的是注解，引入对应dao类 -->
-    <mappers>
-        <!--该包下的所有dao接口都可用-->
-        <package name="cn.sucrelt.dao"/>
-    </mappers>
-</configuration>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE configuration-->
+<!--        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"-->
+<!--        "http://mybatis.org/dtd/mybatis-3-config.dtd">-->
+<!--<configuration>-->
+<!--    &lt;!&ndash; 配置环境 &ndash;&gt;-->
+<!--    <environments default="mysql">-->
+<!--        <environment id="mysql">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/ssm?characterEncoding=UTF-8&amp;serverTimezone=GMT"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="123456"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+<!--    &lt;!&ndash; 引入映射的配置文件，使用的是注解，引入对应dao类 &ndash;&gt;-->
+<!--    <mappers>-->
+<!--        &lt;!&ndash;该包下的所有dao接口都可用&ndash;&gt;-->
+<!--        <package name="cn.sucrelt.dao"/>-->
+<!--    </mappers>-->
+<!--</configuration>-->
